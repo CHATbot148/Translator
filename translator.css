@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    color: #333;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+.input-section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #1e3c72;
+}
+
+.mic-btn {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    background-color: #1e3c72;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mic-btn:hover {
+    transform: scale(1.2);
+}
+
+.language-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language-select select {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.language-select select:hover {
+    border-color: #1e3c72;
+}
+
+.output-section textarea {
+    background-color: #f7f7f7;
+    cursor: not-allowed;
+}
+
+.translate-btn {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.translate-btn:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    transform: scale(1.05);
+}
+
+.speak-btn {
+    background-color: #1e3c72;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.speak-btn:hover {
+    background-color: #2a5298;
+    transform: scale(1.05);
+}
+
+.In-btn {
+    background: yellow;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    transition: all 0.6s;
+}
+
+.In-btn:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
