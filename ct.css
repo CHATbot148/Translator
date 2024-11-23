@@ -116,11 +116,11 @@ body {
     }
 
     .speaker-section {
-        flex: 0 0 90%; /* Keep the speakers at 40% height */
+        flex: 0 0 65%; /* Keep the speakers at 40% height */
     }
 
     .back-btn {
-        margin-top: 300px; /* Give space between button and speakers */
+        margin-top: 150px; /* Give space between button and speakers */
     }
 }
 
