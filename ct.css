@@ -99,13 +99,26 @@ body {
     border-color: #1e3c72;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .conversation-container {
-        flex-direction: column; /* Stack speakers vertically */
-        gap: 10px; /* Add spacing between stacked speakers */
+        height: auto; /* Allow the height to adjust based on content */
     }
 
-    #speaker1, #speaker2 {
-        width: 100%; /* Make speakers take full width */
+    .speaker-section {
+        flex: 0 0 90%; /* Keep the speakers at 40% height */
+    }
+
+    .back-btn {
+        margin-top: 300px; /* Give space between button and speakers */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .speaker-section {
+        flex: 0 0 90%; /* For smaller screens, use 50% height */
+    }
+
+    .back-btn {
+        margin-top: 300px; /* Ensure space between the button and the speakers */
     }
 }
