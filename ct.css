@@ -99,6 +99,17 @@ body {
     border-color: #1e3c72;
 }
 
+@media (max-width: 768px) {
+    .conversation-container {
+        flex-direction: column; /* Stack speakers vertically */
+        gap: 15px; /* Add spacing between stacked speakers */
+    }
+
+    #speaker1, #speaker2 {
+        width: 100%; /* Make speakers take full width */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .conversation-container {
         height: auto; /* Allow the height to adjust based on content */
