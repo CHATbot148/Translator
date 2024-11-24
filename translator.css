@@ -138,11 +138,8 @@ textarea:focus {
 }
 
 .In-btn:hover {
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    font-weight: 700;
     cursor: pointer;
+    transform: translateY(-6px);
 }
 
 @keyframes fadeIn {
