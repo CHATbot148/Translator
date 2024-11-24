@@ -99,37 +99,41 @@ body {
     border-color: #1e3c72;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .conversation-container {
-        flex-direction: column; /* Stack speakers vertically */
-        gap: 15px; /* Add spacing between stacked speakers */
+        flex-direction: column;
+        gap: 15px;
     }
 
     #speaker1, #speaker2 {
-        width: 100%; /* Make speakers take full width */
+        width: 100%;
+    }
+
+    .speaker-section.glow {
+        box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.6);
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .conversation-container {
-        height: auto; /* Allow the height to adjust based on content */
+        height: auto;
     }
 
     .speaker-section {
-        flex: 0 0 65%; /* Keep the speakers at 40% height */
+        flex: 0 0 65%;
     }
 
     .back-btn {
-        margin-top: 150px; /* Give space between button and speakers */
+        margin-top: 150px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .speaker-section {
-        flex: 0 0 90%; /* For smaller screens, use 50% height */
+        flex: 0 0 90%;
     }
 
     .back-btn {
-        margin-top: 300px; /* Ensure space between the button and the speakers */
+        margin-top: 300px;
     }
 }
